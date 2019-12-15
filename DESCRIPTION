@@ -1,0 +1,22 @@
+Package: mapapi
+Title: Map related API
+Version: 0.2
+Authors@R: 
+    person(given = "Jonas",
+           family = "Gu",
+           role = c("aut", "cre"),
+           email = "exoulster@gmail.com")
+Description: Map service APIs including Baidu Map, Amap, and other helper functions.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    devtools,
+    crul,
+    geosphere,
+    rjson,
+    leaflet,
+    leafletCN
+Suggests: 
+    testthat (>= 2.1.0)
+RoxygenNote: 6.1.1
