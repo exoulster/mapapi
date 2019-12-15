@@ -12,10 +12,10 @@ draw_amap = function(data) {
 }
 
 #' @export
-launch_poi_search = function() {
+launch_poi_search = function(port=getOption("shiny.port")) {
   library(shiny)
   library(dplyr)
   library(tidyr)
 
-  shiny::runApp(appDir = system.file("poisearch", package = 'mapapi'))
+  shiny::runApp(appDir = system.file("poisearch", package = 'mapapi'), port=port)
 }
